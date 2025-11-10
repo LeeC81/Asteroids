@@ -13,7 +13,7 @@ def main():
     pygame.font.init()
 
     name = input("Enter your name for the scoreboard: ")
-    screen = pygame.display.set_mode((1366, 768))
+    screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
     clock = pygame.time.Clock()
     dt = 0
     score = 0
