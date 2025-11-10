@@ -93,7 +93,7 @@ def main():
         screen.blit(score_text, (10, 10))
 
         # Draw high score to screen
-        high_score_text = font.render(f"High Score: {high_score}", True, (255, 255, 255))
+        high_score_text = font.render(f"High Score - {high_score}", True, (255, 255, 255))
         screen.blit(high_score_text, (1000, 10))
 
         pygame.display.flip()
