@@ -72,7 +72,7 @@ def main():
                 with open("./high_score.txt", 'r') as f:
                     content = f.read()
                     if int(content.split(':')[1]) < score:
-                        with open(high_score, 'w') as f:
+                        with open("./high_score.txt", 'w') as f:
                             f.write(f"{name}: {score}")
                     print(f"Your score: {score}")
                 print("High Score:")
