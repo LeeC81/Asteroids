@@ -49,4 +49,14 @@ class Player(CircleShape):
         if keys[pygame.K_SPACE]:
             self.shoot()
 
+        # Check screen boundaries
+        if self.position.x < self.radius:
+            self.position.x = self.radius
+        if self.position.x > 1366 - self.radius:
+            self.position.x = 1366 -self.radius
+        if self.position.y < self.radius:
+            self.position.y = self.radius
+        if self.position.y > SCREEN_HEIGHT - self.radius:
+            self.position.y = SCREEN_HEIGHT - self.radius
+
         self.shot_cooldown_timer -= dt
